@@ -7,7 +7,7 @@
 
   <style>
       
-    #imagecontainer {
+    #images {
       display: flex;
       flex-wrap: wrap;
     }
@@ -16,6 +16,7 @@
 
 </head>
 <body>
+  
   <header>
     <h1>{{ title }}</h1>
   </header>
@@ -23,7 +24,8 @@
   <main>
       
     <p> Her er hovedbodyen! </p>
-    <div id="imagecontainer">
+   
+    <section id="images">
 
       {% for  src in images %}
 
@@ -31,7 +33,7 @@
 
       {% endfor %}
 
-    </div>
+    </section>
   </main>
 
 </body>

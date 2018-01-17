@@ -1,0 +1,28 @@
+
+
+<table>
+  
+
+  <thead>
+    
+  </thead>
+
+
+  <tbody>
+    {% for contact in contacts %}
+
+      <tr>
+        <td>
+          <a href="editContact.php?id={{ contact.id }}">
+            <img class="editIcon" src="img/pen.png" alt="">
+          </a>
+        </td>
+        <td>
+            
+        </td>
+      </tr>
+
+    {% endfor %}
+  </tbody>
+
+</table>

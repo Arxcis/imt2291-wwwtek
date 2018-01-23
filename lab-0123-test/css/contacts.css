@@ -1,0 +1,56 @@
+/* CSS used for showing form for adding/editing contact information */
+label {
+  display: inline-block;
+  width: 5em;
+}
+input {
+  width: 15em;
+}
+
+input[type="submit"] {
+  width: 15em;
+  margin-top: 10px;
+  margin-left: 4em;
+}
+
+/* CSS used for formating the table used to present a list of contacts */
+td {
+  width: 12em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr th {
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #EEE;
+}
+
+th, td {
+  padding: 5px 10px;
+}
+
+td:first-child {
+  width: 20px;
+  padding-right: 5px;
+}
+.editIcon {
+  height: 20px;
+}
+
+/* Do not show editing icon on search result page */
+.searchresult td:first-child {
+  width: 0px;
+  padding: 0;
+}
+.searchresult th:first-child {
+  padding: 0;
+}
+.searchresult .editIcon {
+  display: none;
+}

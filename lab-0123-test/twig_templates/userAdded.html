@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lagt til bruker</title>
+</head>
+<body>
+  {% if status=="OK" %}
+    <h1 data-id="{{id}}">Brukeren ble registrert</h1>
+    <p>{{ data.username }}  er lagt til i databasen</p>
+    <p><a href="index.php">Tilbake til hovedsiden</a><p>
+  {% else %}
+    <h1>Det oppsto en feil</h1> 
+    <p>Klarte ikke å legge til {{ data.username }} i databasen</p>
+    <p>{{ errorinfo[2] }} {{ errormsg }} {{ status }}</p>
+    <p><a href="addUser.php">Prøv igjen</a>, <a href="index.php">tilbake til hovedsiden</a></p>
+  {% endif %}
+</body>
+</html>

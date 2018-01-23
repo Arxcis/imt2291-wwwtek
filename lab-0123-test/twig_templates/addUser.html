@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Legg til en kontakt</title>
+  <link rel="stylesheet" href="./css/contacts.css">
+</head>
+<body>
+  <h1>Legg til en kontakt</h1>
+  <form id="addUser" action="./addUser.php" method="post">
+
+    <label for="username">Epost: </label>
+    <input type="email" id="username" name="username" value="jonas.solsvik@gmail.com" required/><br/>
+
+    <label for="password">Passord:</label>
+    <input type="password" id="password" name="password" required/><br/>
+
+    <input type="submit" value="Legg til bruker" name="addUser">
+  </form>
+</body>
+</html>

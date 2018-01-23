@@ -5,7 +5,10 @@
 require_once '../../twig/vendor/autoload.php';
 require_once './classes/Contacts.php';
 
-$loader = new Twig_Loader_Filesystem('./templates');
+//$loader = new Twig_Loader_Filesystem('./templates');
+
+$loader = new Twig_Loader_Array();
+
 $twig = new Twig_Environment($loader, array());
 
 $contacts = new Contacts();
